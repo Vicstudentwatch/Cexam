@@ -6,15 +6,15 @@ int main(){
 	char grade , grades;
 	
 	for(i=0;i<7;i++){
-		printf("Please input marks subject(%d): ",i);
+		printf("Please input marks subject(%d): ",i + 1);
 		scanf("%d",&marksGot[i]);
 	}
 	
 	printf("\n");
 	
-	void displayGrade(grades){
-		printf("Grade for subject is %c \n",grades);
-	};
+	// void displayGrade(grades){
+	// 	printf("Grade for subject is %c \n",grades);
+	// };
 	
 	for(i=0;i<7;i++){
 		if(marksGot[i]<100 && marksGot[i]>80){
@@ -35,9 +35,9 @@ int main(){
 		}else {
 			printf("An Error Occured\n");
 		}
-		displayGrade(grade);
+		// displayGrade(grade);
 		
-//		printf("Grade for subject(%d) is %c \n",i,grade);
+		printf("Grade for subject(%d) is %c \n",i + 1,grade);
 		//printf("Marks for subject(%d) is %d \n",i,marksGot[i]);
 	}
 	
